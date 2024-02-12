@@ -88,18 +88,15 @@ a:hover{
 }
 .about__image{
     padding-right: 3rem;
-  /*  padding-left: 3rem; */  
 }
 .about__image--profil{
     height: 25rem;
      width: 25rem;
     border-radius: 50%;
-   /* padding: 20px; */
 }
 .about__description{
  padding-right: 10rem;
- /* width: 100%;
-  height: 100%;*/
+
 }
 .about__title{
     padding-top: 2rem;
@@ -112,8 +109,6 @@ a:hover{
 }
 .about__text{
     width: 30rem;
-    /*padding-right:  10rem 0rem;*/
-    /*text-align: left;*/
 }
 .about__btn{
     justify-content: space-between;
@@ -173,10 +168,43 @@ a:hover{
     .header__logo{
         padding-bottom: 2rem;
     }
+    .about{
+        padding: 1rem;
+    }
     .about__container{
         display: block;
     }
-   
+    .about__text{
+        width: 15rem;
+    }
+    .about__image--profil{
+        height: 20rem;
+         width: 20rem;
+        border-radius: 50%;
+      
+    }
+    .about__description{
+        padding: 2rem;
+       
+       }
+       .about__btn--cv{
+        padding: 1.7rem;
+        background: var(--orange-color);
+        border: 1px solid var(--brown-color);
+        border-radius: 50%;
+    }
+    .about__btn--projets{
+        padding: 2rem 0.7rem;
+        background: var(--red-color);
+        border: 1px solid var(--brown-color);
+        border-radius: 50%;
+    }
+    .about__btn--contact{
+        padding: 1.5rem 0.5rem;
+        background: var(--blue-color);
+        border: 1px solid var(--brown-color);
+        border-radius: 50%;
+    }
 }
 /* cv */
 
