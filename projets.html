@@ -1,63 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="stylesheet" href="style.css">
-       <title>Portfolio</title>
-    </head>
-    <body>
-      <header class="header">
-          <a href="./index.html" class="logo"> Grace Luswanga</a>
-          <nav class="navabar">
-              <ul class="nav_links">
-                  <li class="liborder"><a href="./cv.html">cv</a></li>
-                  <li class="liborder"><a href="./projets.html">Projets</a></li>
-                  <li><a href="./contact.html">Contact</a></li>
-                </ul>
-           </nav>
-        </header>
-        <main id="main-projets">
-            <section>
-               <h2>Projets</h2> 
-               <section class="section-projets-text">
-                  <h4>Portfolio</h4> 
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil corporis dolores cupiditate non, esse consequuntur vero, aspernatur eaque deleniti mollitia harum quae repellat exercitationem adipisci optio? Eligendi voluptatum modi ipsam.</p>
-               </section>
-               <div id="image-projets-1"> 
-                     <img id="img-projets-1" src="./images/IMG_9537.jpg" alt="">
-               </div>
-               <section class="section-projets-text">
-                  <h4>Dr.Norman Borlaug</h4>
-                  <br>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio blanditiis incidunt minus? Nam veritatis quis optio quos qui adipisci asperiores, nemo aut debitis! Saepe, itaque libero veritatis praesentium nobis reiciendis.</p>
-               </section>
-               <div id="image-projets-2">
-                  <img id="img-projets-2" src="./Images/dr.norman.png" alt="portfolio-contact-page">
-               </div>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <header class="header">
+        <p class="header__logo">
+            <a href="./index.html"> Grace Luswanga</a>
+        </p>
+        <nav class="nav">
+            <ul class="nav__links">
+                <li class="nav__links--border"><a href="./cv.html">cv</a></li>
+                <li class="nav__links--border"><a href="./projets.html">Projets</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="projets">
+        <section class="projets__description">
+            <h2 class="projets__title">Projets</h2>
+            <section class="projets__text">
+                <h4>Portfolio</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil corporis dolores cupiditate non, esse
+                    consequuntur vero, aspernatur eaque deleniti mollitia harum quae repellat exercitationem adipisci
+                    optio? Eligendi voluptatum modi ipsam.</p>
             </section>
-        </main>
-        <footer>
-            <div class="footer-2">
-                <div class="footer-col">
+            <div class="projets__image">
+                <img class="projets__image--img" src="./images/IMG_9537.jpg" alt="image-portfolio">
+            </div>
+            <section class="projets__text">
+                <h4>Dr.Norman Borlaug</h4>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio blanditiis incidunt minus? Nam
+                    veritatis quis optio quos qui adipisci asperiores, nemo aut debitis! Saepe, itaque libero veritatis
+                    praesentium nobis reiciendis.</p>
+            </section>
+            <div class="projets__image">
+                <img class="projets__image--img" src="./Images/dr.norman.png" alt="portfolio-contact-page">
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="footer__nav">
+                <div>
                     <h4>Télephone</h4>
+                    <div class="hidden">Hidden</div>
                     <a href="tel:+243822482693">+243822482693</a>
                 </div>
-                <div class="footer-col">
-                    <h4>Email</h4>
+                <div>
+                    <h4 class="footer__nav--info">Email</h4>
+                    <div class="hidden">Hidden</div>
                     <a href="mailto:luswanga2@gmail;com">luswanga2@gmail.com</a>
                 </div>
-                <div class="footer-col">
-                    <h4>suivez-moi</h4>
+                <div>
+                    <h4 class="footer__nav--info">suivez-moi</h4>
+                    <div class="hidden">Hidden</div>
                     <iconify-icon icon="iconoir:instagram"></iconify-icon>
                     <iconify-icon icon="mdi:twitter"></iconify-icon>
                     <iconify-icon icon="mdi:pinterest"></iconify-icon>
                 </div>
-                <div id="copyright">©2024 By Grace Luswanga </div>
+                <div class="copyright footer__nav--info">©2024 By Grace Luswanga </div>
             </div>
         </footer>
         <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js">
         </script>
-    </body>
-</html>
+    </main>
+</body>
 
+</html>
