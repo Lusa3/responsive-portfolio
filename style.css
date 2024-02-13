@@ -160,10 +160,11 @@ a:hover{
     font-size: 12px;
 }
 /*---responsive index htlml---*/
+
 @media screen and (max-width: 767px) {
-    .header{
-        display: block;
-        justify-content: center;
+    
+    .header{ 
+        flex-direction: column;
     }
     .header__logo{
         padding-bottom: 2rem;
@@ -187,6 +188,9 @@ a:hover{
         padding: 2rem;
        
        }
+       .about__btn{
+        padding-top: 4rem;
+    }
        .about__btn--cv{
         padding: 1.7rem;
         background: var(--orange-color);
@@ -213,7 +217,13 @@ a:hover{
        .about__text{
         width: 20rem;
     }
-    
+    .about__image{
+        padding: 2rem;
+    } 
+    .footer__nav{
+        display: block;
+        text-align: center;
+    }
 }
 /* cv */
 
