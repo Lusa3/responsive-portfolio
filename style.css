@@ -68,7 +68,10 @@ li {
 .nav ul li {
     padding: 0px 10px;
 }
-a:hover{
+nav  a:hover{
+    color:var(--grey-color)
+}
+.about__btn a:hover{
     color:var(--grey-color)
 }
 /*------main------*/
@@ -174,6 +177,7 @@ a:hover{
 .footer{
    border-top: 1px solid rgba( 218, 211, 211, 0.903);
     padding-top: 1.5rem;
+   
 }
 .footer__nav{
     display: flex;
@@ -258,7 +262,8 @@ a:hover{
        text-align: center;
     }
     .footer__nav--info{
-        margin-bottom: 10rem !important;
+        padding-top: 1.5rem;
+
     }
    
 }
