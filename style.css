@@ -546,47 +546,27 @@ nav a:hover {
 
 /*----mobile-----*/
 @media screen and (max-width:767px) {
+    body {
+        margin: 1rem;
+        padding: 1rem;
+        color: var(--black-color);
+    }
+    
     .contact {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        
+        text-align: center;
+        gap: 3rem;
         padding-top: 5rem;
-        padding-bottom: 8rem;
+        padding-bottom: 10rem;
     }
     
-    .contact li {
-        list-style: none;
-    }
     
     .section-contact {
-        font-size: 1.2rem;
+        font-size: 10rem;
     }
     .from__info {
-        
+        flex-direction: column;
     }
-    
-    .from__info--name {
-        gap: 6rem;
-        margin-bottom: 15px;
-    }
-    
-    .from__info--subject {
-        padding-bottom: 2rem;
-    }
-    
-    .from__info--submit {
-        justify-content: space-around;
-        gap: 1rem;
-        margin-bottom: 15px;
-    }
-    
-    .from__info--send {
-        padding: 2rem;
-        margin: 2rem;
-        border-radius: 50%;
-        background: var(--orange-color);
-        border: 1px solid #593E03;
-    }
-    
+   
 }
