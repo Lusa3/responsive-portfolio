@@ -523,12 +523,16 @@ nav a:hover {
     }
     
     .projets__text {  
-       
+    justify-content: center;
+    /*position: absolute;*/
+    max-width: 25rem;
+    
+   
     }
     
     .projets__image {
         justify-content: center;
-        padding: 5rem;
+        padding: 1rem;
     }
     
     .projets__image--img {
