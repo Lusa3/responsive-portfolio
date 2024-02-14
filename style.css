@@ -25,8 +25,8 @@
 }
 
 body {
-    margin: 50px;
-    padding: 30px;
+    margin: 5rem;
+    padding: 3rem;
     color: var(--black-color);
 }
 
@@ -336,20 +336,20 @@ nav a:hover {
     }
 
     .about {
-        padding: 1rem;
+        padding: 2rem;
     }
 
     .about__container {
-        display: block;
+       flex-direction: column;
     }
 
     .about__text {
-        width: 15rem;
+        max-width: 20rem;
     }
 
     .about__image--profil {
-        height: 20rem;
-        width: 20rem;
+        max-height: 20rem;
+        max-width: 20rem;
         border-radius: 50%;
 
     }
@@ -410,48 +410,44 @@ nav a:hover {
 
 }
 /*------- responsive for table --------*/
-@media screen and(min-width:767px) and (max-width:1023px) {
+@media screen  and (min-width:767px) and (max-width:1023px) {
 
     .about__container {
-       flex-direction: column;
-    }
-
-    .about__text {
-        width: 15rem;
+      flex-direction: column;
     }
 
     .about__image--profil {
-        height: 20rem;
-        width: 20rem;
+        max-height: 25rem;
+        max-width: 25rem;
         border-radius: 50%;
 
     }
 
     .about__description {
-        padding: 2rem;
-
+        padding: 5rem;
+        text-align: center;
     }
 
     .about__btn {
-        padding-top: 4rem;
+        padding-top: 7rem;
     }
 
     .about__btn--cv {
-        padding: 1.7rem;
+        padding: 2rem;
         background: var(--orange-color);
         border: 1px solid var(--brown-color);
         border-radius: 50%;
     }
 
     .about__btn--projets {
-        padding: 1.7rem 0.7rem;
+        padding: 2rem 1rem;
         background: var(--red-color);
         border: 1px solid var(--brown-color);
         border-radius: 50%;
     }
 
     .about__btn--contact {
-        padding: 1.5rem 0.5rem;
+        padding: 2rem 0.8rem;
         background: var(--blue-color);
         border: 1px solid var(--brown-color);
         border-radius: 50%;
@@ -462,15 +458,26 @@ nav a:hover {
         text-align: center;
 
     }
-
+    .about__title {
+        padding-top: 2rem;
+        padding-bottom: 1rem;
+        font-size: 4rem;
+    
+    }
+    
+    .about__subtitle {
+        padding: 1rem 0rem;
+        font-size: 2rem;
+    }
+    
     .about__text {
-        width: 20rem;
+        max-width: 20rem;
+        font-size: 1.2rem;
     }
 
     .about__image {
         padding: 2rem;
     }
-
     .footer__nav {
         flex-direction: column;
         text-align: center;
@@ -480,151 +487,106 @@ nav a:hover {
         padding-top: 2rem;
 
     }
-
-
 }
 
 /*------- responsive cv -------*/
+@media screen and (max-width:767px) {
+    body {
+        margin: 1rem;
+        padding: 1.2rem;
+    }
+    .description__title {
+        font-size: 1.4rem;
+        padding-top: 4rem;
 
-
+    } 
+}
 
 /*------- responsive projets -------*/
-
-/* cv */
-
-/*#h1-cv{
-    font-size: 1.4rem;
-    margin-bottom: 2rem;
-}
-#main-cv{
-  margin: 2rem;
-   padding: 10rem;
-}
-.section-h3{
-    font-size: 1.3rem;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-   }
-.head-h4-cv{
-    display: flex;
-    justify-content: space-between;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    height: 4rem;
-}
-.head-p-ul{
-   padding: 1.5rem;
-   line-height: 1.8rem;
-}
-.border-1-cv{
-    border-top: 1px solid rgba( 218, 211, 211, 0.903);
-}*/
-
-/* contact */
-/*#main-contact{
-  display: flex;
-  justify-content: center;
-  justify-content: space-around;
-  padding-top: 20rem;
-  padding-bottom: 15rem;
- 
-}
-#section-formulaire{
-    font-size: 1rem;
-}
-.section-contact{
-   font-size: 1.2rem;
-}
-#first-last-name{
-    display: flex;
-    justify-content: space-between;
-    gap: 10%;
-    margin-bottom: 15px;
-} 
-#email-subject{
-    display: flex;
-    justify-content: space-between;
-    gap: 10%;
-    margin-bottom: 15px;
-}
-#message-submit{
-    display: flex;
-    justify-content: space-around;
-    gap: 1rem;
-    margin-bottom: 15px;
-}
-#firstname{
-    width: 15rem;
-    height: 3rem;
-}
-#lastname{
-    width: 15rem;
-    height: 3rem;
-}
-#email{
-    width: 15rem;
-    height: 3rem;
-}
-#subject{
-    width: 15rem;
-    height: 3rem;
-}
-#message{
-    width: 15rem;
-    height: 10rem;
-}
-#envoyer{
-    width: 9rem;
-    height: 9rem;
-    border-radius: 50%;
-    background: #EEA302;
-    border: 1px solid #593E03;
-    margin: 30px;
-}*/
-/* projets */
-
-/*#main-projets{
-   display: flex;
-   justify-content: center;
-   margin-top: 5rem;
-   margin-bottom: 5rem;
-   justify-content: space-between;
+@media screen and (max-width:767px) {
+    .projets {
+        display: flex;
+        flex-direction: column;
+       /* margin-top: 5rem;
+        margin-bottom: 5rem;*/
+    }
+    
+    .projets__description {
+        justify-content: center;
+    }
+    
+    .projets__title {
+        text-align: center;
+        padding-top: 1rem;
+        padding-bottom: 3rem;
+      
+    }
+    
+    .projets__text {  
+    justify-content: center;
+    /*position: absolute;*/
+    max-width: 25rem;
+    
    
+    }
+    
+    .projets__image {
+        justify-content: center;
+        padding: 1rem;
+    }
+    
+    .projets__image--img {
+        margin-bottom: 5rem;
+        width: 40%;
+        border: 1rem solid var(--grey-color);
+    }
 }
-#image-projets-1{
-  display: flex;
-  justify-content: center;
-  padding-left: 45rem;
-}
-#image-projets-2{
-    display: flex;
-    justify-content: center;
-    padding-left: 45rem;
-  }
-#img-projets-1{
-   margin-bottom: 5rem;
-   width: 40%;
-   border: 20px solid #DFDFDF;
-  
-}
-#img-projets-2{
-    margin-bottom: 5rem;
-    width: 40%;
-    border: 20px solid #DFDFDF;
-  
- }
-.section-projets-text{
-    display: block;
-    justify-content: center;
-    text-align: left;
-    position: absolute;
-    width: 30rem;
-    line-height: 1.7rem ;
-    margin-left: 5rem;
+
+/*-------- responsive contact ---------*/
+
+/*----mobile-----*/
+@media screen and (max-width:767px) {
+    .contact {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+        padding-top: 5rem;
+        padding-bottom: 8rem;
+    }
+    
+    .contact li {
+        list-style: none;
+    }
+    
+    .section-contact {
+        font-size: 1.2rem;
+    }
+    .from__info {
+        
+    }
+    
+    .from__info--name {
+        gap: 6rem;
+        margin-bottom: 15px;
+    }
+    
+    .from__info--subject {
+        padding-bottom: 2rem;
+    }
+    
+    .from__info--submit {
+        justify-content: space-around;
+        gap: 1rem;
+        margin-bottom: 15px;
+    }
+    
+    .from__info--send {
+        padding: 2rem;
+        margin: 2rem;
+        border-radius: 50%;
+        background: var(--orange-color);
+        border: 1px solid #593E03;
+    }
     
 }
-#main-projets h2{
-    padding-top: 1rem;
-    padding-bottom: 3rem;
-    margin-left: 5rem;
-}*/
