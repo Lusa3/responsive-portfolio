@@ -541,3 +541,52 @@ nav a:hover {
         border: 1rem solid var(--grey-color);
     }
 }
+
+/*-------- responsive contact ---------*/
+
+/*----mobile-----*/
+@media screen and (max-width:767px) {
+    .contact {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+        padding-top: 5rem;
+        padding-bottom: 8rem;
+    }
+    
+    .contact li {
+        list-style: none;
+    }
+    
+    .section-contact {
+        font-size: 1.2rem;
+    }
+    .from__info {
+        
+    }
+    
+    .from__info--name {
+        gap: 6rem;
+        margin-bottom: 15px;
+    }
+    
+    .from__info--subject {
+        padding-bottom: 2rem;
+    }
+    
+    .from__info--submit {
+        justify-content: space-around;
+        gap: 1rem;
+        margin-bottom: 15px;
+    }
+    
+    .from__info--send {
+        padding: 2rem;
+        margin: 2rem;
+        border-radius: 50%;
+        background: var(--orange-color);
+        border: 1px solid #593E03;
+    }
+    
+}
