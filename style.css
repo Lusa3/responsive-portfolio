@@ -336,20 +336,20 @@ nav a:hover {
     }
 
     .about {
-        padding: 1rem;
+        padding: 2rem;
     }
 
     .about__container {
-        display: block;
+       flex-direction: column;
     }
 
     .about__text {
-        width: 15rem;
+        max-width: 20rem;
     }
 
     .about__image--profil {
-        height: 20rem;
-        width: 20rem;
+        max-height: 20rem;
+        max-width: 20rem;
         border-radius: 50%;
 
     }
@@ -410,7 +410,7 @@ nav a:hover {
 
 }
 /*------- responsive for table --------*/
-@media screen and (max-width:1023px) {
+@media screen  and (min-width:767px) and (max-width:1023px) {
 
     .about__container {
       flex-direction: column;
@@ -429,7 +429,7 @@ nav a:hover {
     }
 
     .about__btn {
-        padding-top: 5rem;
+        padding-top: 7rem;
     }
 
     .about__btn--cv {
@@ -458,10 +458,21 @@ nav a:hover {
         text-align: center;
 
     }
-
+    .about__title {
+        padding-top: 2rem;
+        padding-bottom: 1rem;
+        font-size: 4rem;
+    
+    }
+    
+    .about__subtitle {
+        padding: 1rem 0rem;
+        font-size: 2rem;
+    }
+    
     .about__text {
         width: 20rem;
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
 
     .about__image {
@@ -493,5 +504,36 @@ nav a:hover {
 
 /*------- responsive projets -------*/
 @media screen and (max-width:767px) {
-   
+    .projets {
+        display: flex;
+        flex-direction: column;
+       /* margin-top: 5rem;
+        margin-bottom: 5rem;*/
+    }
+    
+    .projets__description {
+        justify-content: center;
+    }
+    
+    .projets__title {
+        text-align: center;
+        padding-top: 1rem;
+        padding-bottom: 3rem;
+      
+    }
+    
+    .projets__text {  
+       
+    }
+    
+    .projets__image {
+        justify-content: center;
+        padding: 5rem;
+    }
+    
+    .projets__image--img {
+        margin-bottom: 5rem;
+        width: 40%;
+        border: 1rem solid var(--grey-color);
+    }
 }
