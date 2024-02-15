@@ -208,9 +208,18 @@ nav a:hover {
 }
 
 /*-------- projets html ------*/
-.projets {
-    margin-top: 5rem;
-    margin-bottom: 5rem;
+.projets{
+    padding: 0% 5%;
+}
+.projets__title{
+  font-size: 2rem;
+}
+.projets__description{
+    padding: 2rem;
+}
+
+/*.projets {
+   padding: 0% 5%;
 }
 
 .projets__description {
@@ -219,9 +228,7 @@ nav a:hover {
 }
 
 .projets__title {
-    padding-top: 1rem;
-    padding-bottom: 3rem;
-    margin-left: 5rem;
+   font-size: 2rem;
 }
 
 .projets__text {
@@ -244,7 +251,7 @@ nav a:hover {
     margin-bottom: 5rem;
     width: 40%;
     border: 1rem solid var(--grey-color);
-}
+}*/
 
 /*--------- contact html ---------*/
 
@@ -501,23 +508,44 @@ nav a:hover {
 /*------- responsive projets -------*/
 @media screen and (max-width:767px) {
 
-    .projets__text {
-       justify-content: center;
-       text-align: left;
-       width: 20rem;
-   }
+    /*.projets {
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+    }*/
+    
+    .projets__description {
+        justify-content: center;
+        justify-content: space-between;
+    }
+    
+   .projets__title {
+        padding-top: 1rem;
+        padding-bottom: 3rem;
+        margin-left: 5rem;
+    }
+    
+   /* .projets__text {
+         display: block;
+        justify-content: center;
+        text-align: left;
+        position: absolute;
+        width: 30rem;
+        line-height: 1.7rem;
+        margin-left: 5rem;
+    }*/
+    
+   /* .projets__image {
+        display: flex;
+        justify-content: center;
+        padding-left: 45rem;
+    }*/
+    
+    .projets__image--img {
+        margin-bottom: 5rem;
+        width: 40%;
+        border: 1rem solid var(--grey-color);
+    }
    
-   .projets__image {
-       display: flex;
-       justify-content: center;
-      
-   }
-   
-   .projets__image--img {
-       margin-bottom: 5rem;
-      width: 40%;
-       border: 1rem solid var(--grey-color);
-   }
 }
 
 /*-------- responsive contact ---------*/
