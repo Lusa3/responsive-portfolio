@@ -563,7 +563,7 @@ nav a:hover {
         font-size: 1.2rem;
     }
     .from__info {
-        
+        display: flex;
     }
     
     .from__info--name {
