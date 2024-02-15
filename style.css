@@ -498,6 +498,7 @@ nav a:hover {
     .projets__title{
         text-align: center;
         font-size: 1.55rem;
+        padding-top: 2rem;
         margin-bottom: 1rem;
     }
     .projets__content{
