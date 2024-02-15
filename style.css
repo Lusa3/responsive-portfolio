@@ -524,6 +524,39 @@ nav a:hover {
     }
    
 }
+/*--------- responsive tablet ----------*/
+@media screen and (min-width:767px) and (max-width:1023px) {
+    .projets{
+        padding: 0% 0%;
+        font-size: 1.4rem;
+    }
+    .projets__title{
+        font-size: 2rem;
+        padding-top: 3rem;
+    }
+    .projets__content{
+        padding: 0rem;
+        padding-bottom: 5rem;
+    }
+    .projets__subtitle{
+        font-size: 1.5rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+    .projets__item{
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .projets__text{
+        max-width: 40%;
+    }
+    
+    .projets__image{
+        width: 55%;
+        border: 20px solid var(--grey-color);
+    }
+}
 
 /*-------- responsive contact ---------*/
 
