@@ -386,7 +386,6 @@ nav a:hover {
     }
 
     .about__description {
-        padding: none;
         text-align: center;
 
     }
@@ -456,7 +455,6 @@ nav a:hover {
     }
 
     .about__description {
-        padding: none;
         text-align: center;
 
     }
@@ -613,10 +611,14 @@ nav a:hover {
         resize: none;
     }
     .from__input--send {
-        width: 10rem;
-       height: 10rem;
-       
+        margin-top: 2rem;
+        width: 8rem;
+        height: 8rem;
+        border-radius: 50%;
+        background: var(--orange-color);
+        border: 1px solid #593E03;
     }
+   
     .from__send{
         display: flex;
         width: 20rem;
