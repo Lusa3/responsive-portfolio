@@ -258,15 +258,19 @@ nav a:hover {
 /*----- section from -----*/
 .from__info {
     display: flex;
+    justify-content: space-between; 
 }
 .from__input--info {
-    gap: 10rem;
+    gap: 10rem; 
+    justify-content: space-between;
     padding-bottom: 2rem;
 }
-
+.from__info--text{
+    display: block;
+}
 .from__input--msg {
-    justify-content: space-around;
-    gap: 1rem;
+  justify-content: space-between; 
+  
     margin-bottom: 15px;
 }
 
@@ -278,7 +282,19 @@ nav a:hover {
     background: var(--orange-color);
     border: 1px solid #593E03;
 }
-
+.from__input--item{
+    width: 20rem;
+    height: 3rem;
+  }
+  .input__msg{
+      width: 22rem;
+      height: 10rem;
+      resize: none;
+    }
+    .from__send{
+        display: flex;
+        width: 20rem;
+      } 
 /*-------footer--------*/
 .footer {
     border-top: 1px solid rgba(218, 211, 211, 0.903);
@@ -589,7 +605,7 @@ nav a:hover {
       height: 3rem;
     }
     .from__input--msg{
-        align-items: center;
+        align-items: start;
     }
     .input__msg{
         width: 20rem;
@@ -601,13 +617,18 @@ nav a:hover {
        height: 10rem;
        
     }
-
+    .from__send{
+        display: flex;
+        width: 20rem;
+        justify-content: center;
+      } 
 }
 /*------ responsive tablet -----*/
 @media screen and (min-width:767px) and (max-width:1023px) {
+    
     body {
-        margin: 1rem;
-       /* padding: 3rem;*/
+       margin: 1rem;
+        padding: 3rem;
       
     }
     .contact {
@@ -622,21 +643,16 @@ nav a:hover {
     .section-contact {
         font-size: 1.5rem;
     }
-    
    
     .from__info {
         text-align: left;
     }
-    .from__info--text{
-     justify-content: space-between;
-    }
     .from__input--info {
-        gap: 5rem;
+        gap: 2.3rem;
         padding-bottom: 2rem;
     }
     
     .from__input--msg {
-        justify-content: space-between;
         gap: 4.5rem;
         margin-bottom: 15px;
     }
@@ -657,5 +673,5 @@ nav a:hover {
         display: flex;
         justify-content: flex-start;
         width: 20rem;
-      }
+      } 
 }
