@@ -604,6 +604,58 @@ nav a:hover {
 
 }
 /*------ responsive tablet -----*/
-@media screen and(min-width:767px) and (max-width:1023px) {
-  
+@media screen and (min-width:767px) and (max-width:1023px) {
+    body {
+        margin: 1rem;
+       /* padding: 3rem;*/
+      
+    }
+    .contact {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 7rem;
+        padding-top: 7rem;
+        padding-bottom: 10rem;
+    }
+    
+    .section-contact {
+        font-size: 1.5rem;
+    }
+    
+   
+    .from__info {
+        text-align: left;
+    }
+    .from__info--text{
+     justify-content: space-between;
+    }
+    .from__input--info {
+        gap: 5rem;
+        padding-bottom: 2rem;
+    }
+    
+    .from__input--msg {
+        justify-content: space-between;
+        gap: 4.5rem;
+        margin-bottom: 15px;
+    }
+    .from__input--item{
+        width: 20rem;
+        height: 3rem;
+      }
+      .input__msg{
+          width: 22rem;
+          height: 10rem;
+          resize: none;
+      }
+      .from__input--send {
+          width: 10rem;
+         height: 10rem   
+      }
+      .from__send{
+        display: flex;
+        justify-content: flex-start;
+        width: 20rem;
+      }
 }

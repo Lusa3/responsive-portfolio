@@ -21,7 +21,7 @@
       </ul>
     </nav>
   </header>
-  <section class="contact">
+  <main class="contact">
     <section class="section__contact">
       <div>
         <h4>Télephone</h4>
@@ -39,34 +39,36 @@
       <form action="./index.html">
         <div class="from__info  from__input--info">
           <p>
-            <label for="firstname">First Name</label><br>
+            <label for="firstname" class="from__info--text">First Name</label>
             <input type="text" name="firstname" id="firstname" class="from__input--item">
           </p>
           <p>
-            <label for="lastname">Last Name</label><br>
+            <label for="lastname" class="from__info--text">Last Name</label>
             <input type="text" name="lastname" id="lastname" class="from__input--item">
           </p>
         </div>
         <div class="from__info  from__input--info">
           <p>
-            <label for="email">Email</label><br>
+            <label for="email" class="from__info--text">Email</label>
             <input type="email" name="email" id="email" class="from__input--item">
           </p>
           <p>
-            <label for="subject">Subject</label><br>
+            <label for="subject" class="from__info--texrt">Subject</label>
             <input type="text" name="subject" id="subject" class="from__input--item">
           </p>
         </div>
         <div class="from__info  from__input--msg">
           <p>
-            <label for="message">Message</label><br>
+            <label for="message" class="from__info--text">Message</label>
             <textarea name="message" id="message" cols="30" rows="10" class="input__msg"></textarea>
           </p>
-         <input type="submit" name="envoyer" id="envoyer" class="from__input--send">
+          <div class="from__send">
+            <input type="submit" name="envoyer" id="envoyer" class="from__input--send">
+          </div>
         </div>
       </form>
     </section>
-  </section>
+  </main>
   <footer class="footer">
     <div class="footer__nav">
       <div>
